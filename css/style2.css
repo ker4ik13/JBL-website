@@ -1,0 +1,197 @@
+/* Classes */
+
+
+.items-opacity{
+	animation: opacity .6s;
+	animation-fill-mode: forwards;
+}
+.items-opacity1{
+	animation: opacity1 1s;
+	animation-fill-mode: forwards;
+}
+.opacity__btn{
+	animation: opacity-btn 1s;
+	animation-fill-mode: forwards;
+}
+
+.transform-headphone1{
+	animation: transform-headphone1 .7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	cursor: default;
+}
+.prev__btn-opacity{
+
+	animation: prev__btn-opacity 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+.back__btn--opacity{
+	animation: back__btn--opacity .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+.headphones__characteristics--opacity{
+	animation: headphones__characteristics--opacity 1s;
+	animation-fill-mode: forwards;
+	
+}
+
+
+
+.items-opacity--reverse{
+	animation: opacity 1s;
+	animation-fill-mode: forwards;
+	animation-direction: reverse;
+}
+.items-opacity1--reverse{
+	animation: opacity1 1s;
+	animation-fill-mode: forwards;
+	animation-direction: reverse;
+}
+.opacity__btn--reverse{
+	animation: opacity-btn 1s;
+	animation-fill-mode: forwards;
+	animation-direction: reverse;
+}
+
+.transform-headphone1--reverse{
+	animation: transform-headphone1 .7s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	animation-direction: reverse;
+}
+.prev__btn-opacity--reverse{
+
+	animation: prev__btn-opacity 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	animation-direction: reverse;
+}
+.back__btn--opacity--reverse{
+	animation: back__btn--opacity .5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+	animation-direction: reverse;
+}
+/* Keyframes */
+
+@keyframes opacity{
+	0%{
+		opacity: 1;
+	}
+	25%{
+		opacity: .5;
+	}
+	50%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 0;
+		transform: translate(0, 0);
+	}
+	100%{
+		opacity: .0;
+		display: none;
+		cursor: pointer;
+		transform: translate(-1000%, 0);
+	}
+}
+@keyframes opacity1{
+	0%{
+		opacity: 1;
+	}
+	25%{
+		opacity: .5;
+	}
+	50%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 0;
+	}
+	100%{
+		opacity: .0;
+		display: none;
+		cursor: pointer;
+	}
+}
+@keyframes opacity-btn{
+	0%{
+		opacity: 1;
+	}
+	25%{
+		opacity: .5;
+	}
+	50%{
+		opacity: .0;
+	}
+	75%{
+		opacity: .0;
+		transform: translateX(-50%);
+	}
+	100%{
+		opacity: .0;
+		display: none;
+		cursor: pointer;
+		transform: translate(-1000%, 0);
+	}
+}
+@keyframes transform-headphone1{
+	0%{
+/*		top: -10%;
+		left: 45%;*/
+		transform: translateX(0%) scale(1.0);
+	}
+	100%{
+		transform: translate(-60%, 0%) scale(1.1);
+	}
+}
+@keyframes prev__btn-opacity{
+	0%{
+		opacity: 0;
+		display: inline-block;
+	}
+	50%{
+		opacity: 1;
+		display: inline-block;
+	}
+	100%{
+		opacity: 1;
+		display: inline-block;
+		transform: translate(-150%, 0);
+	}
+}
+@keyframes back__btn--opacity{
+	0%{
+		opacity: 1;
+		transform: translate(0);
+	}
+
+	50%{
+		opacity: 0;
+		transform: translate(0);
+	}
+
+	100%{
+		opacity: 0;
+		transform: translate(0, -1000%);
+	}
+}
+@keyframes headphones__characteristics--opacity{
+	0%{
+		display: none;
+		opacity: 0;
+		z-index: -100;
+	}
+	50%{
+		display: flex;
+		opacity: 1;
+		z-index: 1000;
+	}
+	100%{
+		display: flex;
+		opacity: 1;
+		z-index: 1000;
+	}
+}
